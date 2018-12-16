@@ -7,7 +7,7 @@ public class CustomerTest {
         Scanner sc = new Scanner(System.in);
 
 
-        User user2 = new User("Bob", new Telephon("+380445101006").patNumber(), "mail@m", 9);
+        User user2 = new User("Bob", new Telephon("+380444501006").patNumber(), "mail@m", 9);
         Worker worker2 = new Worker("DDd", new Telephon("+380952345678").patNumber(), "sdfg@dg", 0111, new Profeshion(Profeshion.Prof.Nastroyka, "PC, notebook"), new Location("Авдеевка").patLocal());
         Worker worker3 = new Worker("Sara", new Telephon("+380777348293").patNumber(), "asdd@dfdf.us", 99, new Profeshion(Profeshion.Prof.Manicur, "manicur"), new Location("Киев").patLocal());
 
