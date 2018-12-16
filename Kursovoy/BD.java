@@ -13,11 +13,6 @@ public class BD {
 
     public void addWork(Worker worker) { //добавления Воркера
         workers.add(worker);
-//        try {
-//            fileWrite(workers,"c:\\Program Files\\Java\\OOP Java\\src\\Kursovoy\\Worker.txt");
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
     }
 
     public void addUser(User user) { //добавления Юзера
@@ -57,63 +52,7 @@ public class BD {
     }
 
 //Это всё ещё в розработке, будет сериализация и десериализация в файл
-//    public <T> void fileWrite(List<T> arrayList, String s) throws IOException{
-//        try {
-//            FileWriter fw = new FileWriter(s,true);
-//
-//            BufferedWriter bufOut = new BufferedWriter(fw);
-//
-//            for (T t : arrayList) {
-//                bufOut.write(t.toString()+"\n");
-//            }
-//
-//        } catch (IOException e){
-//            System.out.println("Error!"+e);
-//        }
-//    }
-//
-//
-/////*    private List<Location> locations = new ArrayList<>();
-////
-////    public void addLoc(String s) {
-////        try {
-////            FileReader fr = new FileReader(s);
-////            BufferedReader burIN = new BufferedReader(fr);
-////            String s0;
-////            String[] ss;
-////            while ((s0=burIN.readLine()) !=null){
-////                ss = s0.split(" ");
-////
-////                for (String s1 : ss) {
-////                    locations.add(new Location(s1));
-////                }
-////            }
-////
-////
-////        } catch (IOException e) {
-////            e.printStackTrace();
-//
-////        }
-//
-////    }*/
-//
-////    public <T> List<T> fileRead(String s) throws IOException{
-////        try {
-////            FileReader fr = new FileReader(s);
-////            BufferedReader bufIn = new BufferedReader(fr);
-////            List t = new ArrayList<>();
-////            String s1;
-////            while ((s1 = bufIn.readLine()) !=null){
-////                t.add(s1.split(",="));
-////            }
-////
-////            for (Object o : t) {
-////                System.out.println(o.toString());
-////            }
-////        }catch (IOException e){
-////            System.out.println("Error!" + e);
-////        }
-////    }
+
 
 
     public List<Worker> getWorkers() {
